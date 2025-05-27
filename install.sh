@@ -2,7 +2,7 @@
 set -e -o pipefail
 shopt -s nocaseglob
 
-OUT_FILE=/usr/local/bin/autorestic
+OUT_FILE=${OUT_FILE:-/usr/local/bin/autorestic}
 
 # Type
 NATIVE_OS=$(uname | tr '[:upper:]' '[:lower:]')
